@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key" : {
+    "#": {
+      "item": "frostytrixmod:raw_arthussite"
+    }
+  },
+  "result": {
+    "item": "frostytrixmod:raw_arthussitte_block"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "arthussitte",
+  "ingredient": {
+    "item": "frostytrixmod:raw_arthussite"
+  },
+  "result": "frostytrixmod:arthussite"
+}

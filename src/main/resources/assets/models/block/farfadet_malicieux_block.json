@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "frostytrixmod:block/farfadet_malicieux_block_top",
+    "side": "frostytrixmod:block/farfadet_malicieux_block"
+  }
+}

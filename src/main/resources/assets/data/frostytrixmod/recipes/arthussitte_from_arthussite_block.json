@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [{
+    "item": "frostytrixmod:arthussitte_block"
+  }],
+  "result": {
+    "item": "frostytrixmod:arthussite",
+    "count": 9
+  }
+}
