@@ -27,7 +27,44 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ARTHUSSETTE_ORE_DETECTOR.get());
                         output.accept(ModBlocks.FARFADET_MALICIEUX_BLOCK.get());
                         output.accept(ModItems.GUINNESS.get());
+                        output.accept(ModItems.GUINNESS_SEEDS.get());
+                        output.accept(ModItems.BLESSED_GUINNESS_SEEDS.get());
                         output.accept(ModItems.CHARBON_MALICIEUX.get());
+                        output.accept(ModItems.FOUR_LEAVES_CLOVER.get());
+
+                        // PADOUK
+                        output.accept(ModBlocks.PADOUK_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_PADOUK_LOG.get());
+                        output.accept(ModBlocks.PADOUK_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_PADOUK_WOOD.get());
+                        output.accept(ModBlocks.PADOUK_LEAVES.get());
+                        output.accept(ModBlocks.PADOUK_PLANKS.get());
+                        output.accept(ModBlocks.PADOUK_TRAPDOOR.get());
+                        output.accept(ModBlocks.PADOUK_DOOR.get());
+                        output.accept(ModBlocks.PADOUK_BUTTON.get());
+                        output.accept(ModBlocks.PADOUK_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.PADOUK_FENCE_GATE.get());
+                        output.accept(ModBlocks.PADOUK_FENCE.get());
+                        output.accept(ModBlocks.PADOUK_SLAB.get());
+                        output.accept(ModBlocks.PADOUK_STAIRS.get());
+                        output.accept(ModBlocks.PADOUK_INCANTATION_TABLE.get());
+                        output.accept(ModBlocks.PADOUK_WALL_HANGING_SIGN.get());
+                        output.accept(ModBlocks.PADOUK_SIGN.get());
+
+                        //arthussite stuff
+                        //tools
+                        output.accept(ModItems.ARTHUSSITTE_SWORD.get());
+                        output.accept(ModItems.ARTHUSSITTE_PICKAXE.get());
+                        output.accept(ModItems.ARTHUSSITTE_AXE.get());
+                        output.accept(ModItems.ARTHUSSITTE_SHOVEL.get());
+                        output.accept(ModItems.ARTHUSSITTE_HOE.get());
+                        //armor
+                        output.accept(ModItems.ARTHUSSITTE_HELMET.get());
+                        output.accept(ModItems.ARTHUSSITTE_CHESTPLATE.get());
+                        output.accept(ModItems.ARTHUSSITTE_LEGGINGS.get());
+                        output.accept(ModItems.ARTHUSSITTE_BOOTS.get());
+                        // Mobs
+                        output.accept(ModItems.TIMMY_SPAWN_EGG.get());
                     } )
                     .build());
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "frostytrixmod:block/stripped_padouk_log",
+    "side": "frostytrixmod:block/stripped_padouk_log"
+  }
+}

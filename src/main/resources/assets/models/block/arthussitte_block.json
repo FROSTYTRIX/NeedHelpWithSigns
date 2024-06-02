@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "frostytrixmod:block/arthussitte_block_top",
-    "side": "frostytrixmod:block/arthussitte_block"
-  }
-}

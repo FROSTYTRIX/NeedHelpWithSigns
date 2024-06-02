@@ -1,0 +1,12 @@
+{
+  "type": "frostytrixmod:padouk_incantation",
+  "ingredients": [
+    {
+      "item": "frostytrixmod:guinness_seeds"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "frostytrixmod:blessed_guinness_seeds"
+  }
+}

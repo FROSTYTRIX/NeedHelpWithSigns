@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "frostytrixmod:arthussite"
+    }
+  },
+  "pattern": [
+    "   ",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "item": "frostytrixmod:arthussitte_boots"
+  },
+  "show_notification": true
+}

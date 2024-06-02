@@ -1,5 +1,6 @@
 package net.frostytrix.tutorialmod.block.custom;
 
+import net.frostytrix.tutorialmod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
@@ -33,7 +34,7 @@ public class FarfadetMalicieuxBlock extends Block {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
 
-        pLevel.playSound(pPlayer, pPos, SoundEvents.NOTE_BLOCK_DIDGERIDOO.get(), SoundSource.BLOCKS,
+        pLevel.playSound(pPlayer, pPos, ModSounds.FARFADET_MALICIEUX_RIGHT_CLICK.get(), SoundSource.BLOCKS,
                 1f, 1f);
         return InteractionResult.SUCCESS;
     }

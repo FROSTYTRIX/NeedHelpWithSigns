@@ -1,0 +1,14 @@
+{
+  "type": "frostytrixmod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/sheep/pink"
+    },
+    {
+      "chance": 0.01,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "frostytrixmod:four_leaves_clover"
+}

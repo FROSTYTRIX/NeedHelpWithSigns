@@ -1,0 +1,12 @@
+{
+  "type": "frostytrixmod:padouk_incantation",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "frostytrixmod:charbon_malicieux"
+  }
+}

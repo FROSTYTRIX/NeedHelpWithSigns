@@ -1,14 +1,13 @@
 package net.frostytrix.tutorialmod.datagen;
 
+import net.frostytrix.tutorialmod.util.ModTags;
 import net.frostytrix.tutorialmod.TutorialModTest;
 import net.frostytrix.tutorialmod.block.ModBlocks;
 import net.frostytrix.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -44,10 +43,177 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ARTHUSSITTE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ARTHUSSITTE_BLOCK.get()), has(ModBlocks.ARTHUSSITTE_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_ARTHUSSITTE_BLOCK.get(), 1)
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.RAW_ARTHUSSITTE.get())
+                .unlockedBy(getHasName(ModItems.RAW_ARTHUSSITTE.get()), has(ModItems.RAW_ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_ARTHUSSITTE.get(), 9)
+                .requires(ModBlocks.RAW_ARTHUSSITTE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_ARTHUSSITTE_BLOCK.get()), has(ModBlocks.RAW_ARTHUSSITTE_BLOCK.get()))
+                .save(pWriter);
+
+
+        // PADOUK
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.REDSTONE, ModBlocks.PADOUK_BUTTON.get(), 1)
+                .requires(ModBlocks.ARTHUSSITTE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.PADOUK_DOOR.get(), 3)
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("SS ")
+                .define('S', ModBlocks.PADOUK_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.PADOUK_TRAPDOOR.get(), 2)
+                .pattern("   ")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.PADOUK_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_STAIRS.get(), 3)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.PADOUK_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_SLAB.get(), 3)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("SSS")
+                .define('S', ModBlocks.PADOUK_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_FENCE.get(), 3)
+                .pattern("   ")
+                .pattern("BSB")
+                .pattern("BSB")
+                .define('B', ModBlocks.PADOUK_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_FENCE_GATE.get(), 3)
+                .pattern("   ")
+                .pattern("BSB")
+                .pattern("BSB")
+                .define('S', ModBlocks.PADOUK_PLANKS.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.PADOUK_PLANKS.get()), has(ModBlocks.PADOUK_PLANKS.get()))
+                .save(pWriter);
+
+        // Armor n Tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ARTHUSSITTE_HELMET.get(), 1)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ARTHUSSITTE_CHESTPLATE.get(), 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ARTHUSSITTE_LEGGINGS.get(), 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ARTHUSSITTE_BOOTS.get(), 1)
+                .pattern("   ")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ARTHUSSITTE_SWORD.get(), 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" x ")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .define( 'x', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ARTHUSSITTE_PICKAXE.get(), 1)
+                .pattern("XXX")
+                .pattern(" x ")
+                .pattern(" x ")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .define( 'x', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ARTHUSSITTE_AXE.get(), 1)
+                .pattern("XX ")
+                .pattern("Xx ")
+                .pattern(" x ")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .define( 'x', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ARTHUSSITTE_SHOVEL.get(), 1)
+                .pattern(" X ")
+                .pattern(" x ")
+                .pattern(" x ")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .define( 'x', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ARTHUSSITTE_HOE.get(), 1)
+                .pattern(" XX")
+                .pattern(" x ")
+                .pattern(" x ")
+                .define('X', ModItems.ARTHUSSITTE.get())
+                .define( 'x', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ARTHUSSITTE.get()), has(ModItems.ARTHUSSITTE.get()))
+                .save(pWriter);
+        // PLANKS
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_PLANKS.get(),4)
+                .requires(ModTags.Items.PADOUK_LOG)
+                .unlockedBy(getHasName(ModBlocks.PADOUK_LOG.get()), has(ModBlocks.PADOUK_LOG.get()))
+                .save(pWriter);
+        // WOOD
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PADOUK_WOOD.get(), 3)
+                .pattern("   ")
+                .pattern(" XX")
+                .pattern(" XX")
+                .define('X', ModBlocks.PADOUK_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_LOG.get()), has(ModBlocks.PADOUK_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_PADOUK_WOOD.get(), 3)
+                .pattern("   ")
+                .pattern(" XX")
+                .pattern(" XX")
+                .define('X', ModBlocks.STRIPPED_PADOUK_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PADOUK_LOG.get()), has(ModBlocks.PADOUK_LOG.get()))
+                .save(pWriter);
     }
-
-
-
 
     //Copie Colle pour modifier quoi que ce soit
 

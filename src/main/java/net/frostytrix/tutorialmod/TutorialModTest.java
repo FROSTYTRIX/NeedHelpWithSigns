@@ -2,8 +2,22 @@ package net.frostytrix.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.frostytrix.tutorialmod.block.ModBlocks;
+import net.frostytrix.tutorialmod.block.entity.ModBlockEntities;
+import net.frostytrix.tutorialmod.entity.ModEntities;
+import net.frostytrix.tutorialmod.entity.client.TimmyRenderer;
+import net.frostytrix.tutorialmod.entity.custom.TimmyEntity;
 import net.frostytrix.tutorialmod.item.ModCreativeModTabs;
 import net.frostytrix.tutorialmod.item.ModItems;
+import net.frostytrix.tutorialmod.loot.ModLootModifiers;
+import net.frostytrix.tutorialmod.recipe.ModRecipes;
+import net.frostytrix.tutorialmod.screen.ModMenuTypes;
+import net.frostytrix.tutorialmod.screen.PadoukIncantationTableScreen;
+import net.frostytrix.tutorialmod.sound.ModSounds;
+import net.frostytrix.tutorialmod.util.ModWoodTypes;
+import net.frostytrix.tutorialmod.villager.ModVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +37,7 @@ import org.slf4j.Logger;
 @Mod(TutorialModTest.MODID)
 public class TutorialModTest {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "arthussettemod";
+    public static final String MODID = "frostytrixmod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -31,9 +45,15 @@ public class TutorialModTest {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        ModSounds.register(modEventBus);
+        ModVillagers.register(modEventBus);
+        ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
 
         // Register the commonSetup method for modloading
@@ -72,7 +92,11 @@ public class TutorialModTest {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.PADOUK);
 
+            EntityRenderers.register(ModEntities.TIMMY.get(), TimmyRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.PADOUK_INCANTATION_TABLE_MENU.get(), PadoukIncantationTableScreen::new);
         }
     }
 }

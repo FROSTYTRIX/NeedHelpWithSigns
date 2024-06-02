@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "frostytrixmod:padouk_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "BSB",
+    "BSB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "frostytrixmod:padouk_fence_gate"
+  },
+  "show_notification": true
+}

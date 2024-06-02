@@ -1,0 +1,6 @@
+// 1.20.1	2024-06-02T14:05:12.1271559	Tags for minecraft:item mod id frostytrixmod
+107b581b66e84f2810f3cdbb062a39e59b7ae4b9 data/frostytrixmod/tags/items/padouk_log.json
+dcd8a63c81b88e921e879a0de3320c6ada4de75a data/frostytrixmod/tags/items/padouk_wood.json
+107b581b66e84f2810f3cdbb062a39e59b7ae4b9 data/minecraft/tags/items/logs_that_burn.json
+2c3e51c8964bf987cd36693fa10ced3a6f5487eb data/minecraft/tags/items/planks.json
+7e282249f31e0bb5ff32ea59469233901c21e8d3 data/minecraft/tags/items/trimmable_armor.json

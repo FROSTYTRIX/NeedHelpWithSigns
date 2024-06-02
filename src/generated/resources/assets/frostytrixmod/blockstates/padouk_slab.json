@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "frostytrixmod:block/padouk_slab"
+    },
+    "type=double": {
+      "model": "frostytrixmod:block/padouk_planks"
+    },
+    "type=top": {
+      "model": "frostytrixmod:block/padouk_slab_top"
+    }
+  }
+}

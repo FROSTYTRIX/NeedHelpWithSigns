@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "frostytrixmod:block/padouk_pressure_plate"
+    },
+    "powered=true": {
+      "model": "frostytrixmod:block/padouk_pressure_plate_down"
+    }
+  }
+}

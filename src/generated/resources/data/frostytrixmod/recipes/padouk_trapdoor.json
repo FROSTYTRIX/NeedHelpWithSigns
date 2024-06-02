@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "frostytrixmod:padouk_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "frostytrixmod:padouk_trapdoor"
+  },
+  "show_notification": true
+}

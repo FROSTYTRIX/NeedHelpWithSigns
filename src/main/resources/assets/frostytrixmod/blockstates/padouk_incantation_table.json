@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "frostytrixmod:block/padouk_incantation_table"
+    },
+    "facing=south": {
+      "model": "frostytrixmod:block/padouk_incantation_table", "y": 180
+    },
+    "facing=west": {
+      "model": "frostytrixmod:block/padouk_incantation_table", "y": 270
+    },
+    "facing=east": {
+      "model": "frostytrixmod:block/padouk_incantation_table", "y": 90
+    }
+  }
+}

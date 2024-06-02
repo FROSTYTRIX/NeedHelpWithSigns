@@ -1,0 +1,16 @@
+{
+  "farfadet_malicieux_right_click": {
+    "subtitle": "sounds.frostytrixmod.farfadet_malicieux_right_click",
+    "sounds": [
+      "frostytrixmod:farfadet_malicieux_right_click"
+    ]
+  },
+  "louis_connemara": {
+    "sounds":[
+      {
+        "name": "frostytrixmod:louis_connemara",
+        "stream": true
+      }
+    ]
+  }
+}

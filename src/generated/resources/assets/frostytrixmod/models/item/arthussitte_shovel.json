@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "frostytrixmod:item/arthussitte_shovel"
+  }
+}

@@ -1,0 +1,9 @@
+// 1.20.1	2024-06-02T14:05:12.1241358	Tags for minecraft:block mod id frostytrixmod
+f062d1ac18557a1e7773489bd36ce780bdeb2b3a data/forge/tags/blocks/needs_netherite_tool.json
+1c4846fedc6e995b9dd72ae013d66ca7f3453353 data/frostytrixmod/tags/blocks/ore_detector_ores.json
+78959ff2ff0d425a663c06db58f1add34ca35d63 data/minecraft/tags/blocks/fences.json
+db7446f7b3bf089522e9b537a3ede32cc32a4721 data/minecraft/tags/blocks/fence_gates.json
+107b581b66e84f2810f3cdbb062a39e59b7ae4b9 data/minecraft/tags/blocks/logs_that_burn.json
+8690f2d008a33f7fbcefe3dc47492699d4774236 data/minecraft/tags/blocks/mineable/pickaxe.json
+0356bd826a07dbd498b0560705ea3bc928247c20 data/minecraft/tags/blocks/needs_iron_tool.json
+2c3e51c8964bf987cd36693fa10ced3a6f5487eb data/minecraft/tags/blocks/planks.json

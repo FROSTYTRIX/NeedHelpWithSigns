@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "frostytrixmod:arthussite"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " x ",
+    " x "
+  ],
+  "result": {
+    "item": "frostytrixmod:arthussitte_shovel"
+  },
+  "show_notification": true
+}

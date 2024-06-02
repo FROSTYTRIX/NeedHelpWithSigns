@@ -6,9 +6,55 @@
   "block.frostytrixmod.raw_arthussitte_block": "Raw Arthussitte Block",
   "block.frostytrixmod.arthussitte_ore": "Arthussitte Ore",
   "block.frostytrixmod.deepslate_arthussitte_ore": "Deepslate Arthussitte Ore",
+
+
   "item.frostytrixmod.arthussette_ore_detector": "Arthussette Ore Detector",
+  "item.frostytrixmod.four_leaves_clover": "Four Leaves Clover",
   "block.frostytrixmod.farfadet_malicieux_block": "Farfadet Malicieux Block",
+  "sounds.frostytrixmod.farfadet_malicieux_right_click": "Farfadet Malicieux Speaking ?",
   "item.frostytrixmod.guinness": "Guinness",
-  "item.frostytrixmod.charbon_malicieux": "Charbon Malicieux",
-  "tooltip.frostytrixmod.arthussette_ore_detector": "Trouvez des minerais sous le sol en cliquant sur un block"
+  "item.frostytrixmod.guinness_seeds": "Guinness Seeds",
+  "item.frostytrixmod.blessed_guinness_seeds": "Blessed Guinness Seeds",
+  "item.frostytrixmod.charbon_malicieux": "Coal \"Malicieux\"",
+  "tooltip.frostytrixmod.arthussette_ore_detector": "Trouvez des minerais sous le sol en cliquant sur un block",
+
+
+
+  "block.frostytrixmod.stripped_padouk_log": "Stripped Padouk Log",
+  "block.frostytrixmod.padouk_log": "Padouk Log",
+  "block.frostytrixmod.padouk_wood": "Padouk Wood",
+  "block.frostytrixmod.stripped_padouk_wood": "Stripped Padouk Wood",
+  "block.frostytrixmod.padouk_leaves": "Padouk Leaves",
+  "block.frostytrixmod.padouk_planks": "Padouk Planks",
+  "block.frostytrixmod.padouk_stairs": "Padouk Stairs",
+  "block.frostytrixmod.padouk_slab": "Padouk Slab",
+  "block.frostytrixmod.padouk_door": "Padouk Door",
+  "block.frostytrixmod.padouk_trapdoor": "Padouk Trapdoor",
+  "block.frostytrixmod.padouk_fence": "Padouk Fence",
+  "block.frostytrixmod.padouk_fence_gate": "Padouk Fence Gate",
+  "block.frostytrixmod.padouk_button": "Padouk Button",
+  "block.frostytrixmod.padouk_pressure_plate": "Padouk Pressure Plate",
+  "block.frostytrixmod.padouk_incantation_table": "Padouk Incantation Table",
+  "block.frostytrixmod.padouk_sign": "Padouk Sign",
+  "block.frostytrixmod.padouk_hanging_sign": "Padouk Hanging Sign",
+
+
+
+  "item.frostytrixmod.arthussitte_sword": "Arthussitte Sword",
+  "item.frostytrixmod.arthussitte_pickaxe": "Arthussitte Pickaxe",
+  "item.frostytrixmod.arthussitte_axe": "Arthussitte Axe",
+  "item.frostytrixmod.arthussitte_shovel": "Arthussitte Shovel",
+  "item.frostytrixmod.arthussitte_hoe": "Arthussitte Hoe",
+  "item.frostytrixmod.arthussitte_helmet": "Arthussitte Helmet",
+  "item.frostytrixmod.arthussitte_chestplate": "Arthussitte Chestplate",
+  "item.frostytrixmod.arthussitte_leggings": "Arthussitte Leggings",
+  "item.frostytrixmod.arthussitte_boots": "Arthussitte Boots",
+
+
+  "item.frostytrixmod.louis_connemara_music_disk": "Louis Singing Lake Connemara",
+  "item.frostytrixmod.louis_connemara_music_disk.desc": "Michel Sardou ft. Louis - Lake Connemara",
+
+  "entity.frostytrixmod.timmy": "Timmy",
+  "item.frostytrixmod.timmy_spawn_egg": "Timmy Spawn Egg",
+  "entity.minecraft.villager.frostytrixmod.malicieux": "Malicieux"
 }

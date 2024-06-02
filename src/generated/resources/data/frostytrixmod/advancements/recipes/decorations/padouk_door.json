@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_padouk_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frostytrixmod:padouk_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "frostytrixmod:padouk_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_padouk_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "frostytrixmod:padouk_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

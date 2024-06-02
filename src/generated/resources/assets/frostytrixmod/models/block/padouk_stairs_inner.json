@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "frostytrixmod:block/padouk_planks",
+    "side": "frostytrixmod:block/padouk_planks",
+    "top": "frostytrixmod:block/padouk_planks"
+  }
+}
