@@ -4,20 +4,24 @@ import com.mojang.logging.LogUtils;
 import net.frostytrix.tutorialmod.block.ModBlocks;
 import net.frostytrix.tutorialmod.block.entity.ModBlockEntities;
 import net.frostytrix.tutorialmod.entity.ModEntities;
+import net.frostytrix.tutorialmod.entity.client.ModBoatRenderer;
 import net.frostytrix.tutorialmod.entity.client.TimmyRenderer;
-import net.frostytrix.tutorialmod.entity.custom.TimmyEntity;
 import net.frostytrix.tutorialmod.item.ModCreativeModTabs;
 import net.frostytrix.tutorialmod.item.ModItems;
 import net.frostytrix.tutorialmod.loot.ModLootModifiers;
+import net.frostytrix.tutorialmod.networking.ModPackets;
 import net.frostytrix.tutorialmod.recipe.ModRecipes;
 import net.frostytrix.tutorialmod.screen.ModMenuTypes;
 import net.frostytrix.tutorialmod.screen.PadoukIncantationTableScreen;
 import net.frostytrix.tutorialmod.sound.ModSounds;
 import net.frostytrix.tutorialmod.util.ModWoodTypes;
 import net.frostytrix.tutorialmod.villager.ModVillagers;
+import net.frostytrix.tutorialmod.worldgen.tree.ModFoliagePlacers;
+import net.frostytrix.tutorialmod.worldgen.tree.ModTrunkPlacerType;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -54,6 +58,8 @@ public class TutorialModTest {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
+        ModTrunkPlacerType.register(modEventBus);
+        ModFoliagePlacers.register(modEventBus);
 
 
         // Register the commonSetup method for modloading
@@ -70,7 +76,9 @@ public class TutorialModTest {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ModPackets.register();
+        });
        }
 
     // Add the example block item to the building blocks tab
@@ -95,6 +103,9 @@ public class TutorialModTest {
             Sheets.addWoodType(ModWoodTypes.PADOUK);
 
             EntityRenderers.register(ModEntities.TIMMY.get(), TimmyRenderer::new);
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), context -> new ModBoatRenderer(context, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), context -> new ModBoatRenderer(context, true));
+            EntityRenderers.register(ModEntities.COIN_PROJECTILE.get(), ThrownItemRenderer::new);
 
             MenuScreens.register(ModMenuTypes.PADOUK_INCANTATION_TABLE_MENU.get(), PadoukIncantationTableScreen::new);
         }

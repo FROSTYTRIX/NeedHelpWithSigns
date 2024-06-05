@@ -63,6 +63,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.PADOUK_INCANTATION_TABLE);
         simpleItem(ModItems.PADOUK_SIGN);
         simpleItem(ModItems.PADOUK_HANGING_SIGN);
+        simpleItem(ModItems.PADOUK_BOAT);
+        simpleItem(ModItems.PADOUK_CHEST_BOAT);
+        simpleItem(ModItems.COIN);
+        saplingItem(ModBlocks.PADOUK_SAPLING);
 
         // Arthussitte Stuff
         // Tools
@@ -82,6 +86,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Mobs
         withExistingParent(ModItems.TIMMY_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TutorialModTest.MODID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {

@@ -4,9 +4,8 @@ import net.frostytrix.tutorialmod.TutorialModTest;
 import net.frostytrix.tutorialmod.block.ModBlocks;
 import net.frostytrix.tutorialmod.block.custom.GuinnessCropBlock;
 import net.frostytrix.tutorialmod.entity.ModEntities;
-import net.frostytrix.tutorialmod.item.custom.ArthussetteOreDetectorItem;
-import net.frostytrix.tutorialmod.item.custom.FuelItem;
-import net.frostytrix.tutorialmod.item.custom.ModArmorItem;
+import net.frostytrix.tutorialmod.entity.custom.ModBoatEntity;
+import net.frostytrix.tutorialmod.item.custom.*;
 import net.frostytrix.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -82,7 +81,19 @@ public class ModItems {
     public static final RegistryObject<Item> PADOUK_HANGING_SIGN = ITEMS.register("padouk_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PADOUK_HANGING_SIGN.get(), ModBlocks.PADOUK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    // WAND
+    public static final RegistryObject<Item> WAND = ITEMS.register("wand",
+            () -> new WandItem(new Item.Properties()));
 
+    //Boat
+    public static final RegistryObject<Item> PADOUK_BOAT = ITEMS.register("padouk_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PADOUK,new  Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PADOUK_CHEST_BOAT = ITEMS.register("chest_padouk_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PADOUK,new  Item.Properties().stacksTo(1)));
+
+    // Coin
+    public static final RegistryObject<Item> COIN = ITEMS.register("coin",
+            () -> new CoinItem(new Item.Properties().stacksTo(32)));
 
 
 

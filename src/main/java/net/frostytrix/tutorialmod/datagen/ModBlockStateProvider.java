@@ -59,6 +59,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_PADOUK_LOG);
         blockItem(ModBlocks.STRIPPED_PADOUK_WOOD);
         blockItem(ModBlocks.PADOUK_WOOD);
+        saplingBlock(ModBlocks.PADOUK_SAPLING);
 
         leavesBlock(ModBlocks.PADOUK_LEAVES);
 
@@ -67,6 +68,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         hangingSignBlock(ModBlocks.PADOUK_HANGING_SIGN.get(), (ModBlocks.PADOUK_WALL_HANGING_SIGN.get()),
                 blockTexture(ModBlocks.PADOUK_PLANKS.get()));
+
 
         //Crop Guinness
         makeGuinnessCrop((CropBlock) ModBlocks.GUINNESS_CROP.get(), "guinness_stage", "guinness_stage");
@@ -97,6 +99,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(TutorialModTest.MODID, "block/" + textureName + state.getValue(((GuinnessCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

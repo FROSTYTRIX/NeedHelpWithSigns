@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-02T15:53:08.4652062	Item Models: frostytrixmod
+// 1.20.1	2024-06-03T11:01:09.8815388	Item Models: frostytrixmod
 2b62246a9d3dc8cfc3d313735328dadf421b8bba assets/frostytrixmod/models/item/arthussette_ore_detector.json
 ac4e47352a76e90ce46c70c7eb0e137ceb8833d1 assets/frostytrixmod/models/item/arthussite.json
 f94140ad37cb5a8be48f28dd097274ff470bf68a assets/frostytrixmod/models/item/arthussitte_axe.json
@@ -52,8 +52,11 @@ e81eb956405c63cf950673f57ee4497fe3a65996 assets/frostytrixmod/models/item/arthus
 74146c94bc52c2f161d7c680f45d407d1d040b3e assets/frostytrixmod/models/item/arthussitte_sword.json
 d537712ae06c8e148307fde8b565aff2b3532906 assets/frostytrixmod/models/item/blessed_guinness_seeds.json
 14d42f2af7f92e77a2ded27ba3ab2da9d118ee08 assets/frostytrixmod/models/item/charbon_malicieux.json
+309eb2325d9122e1388fc559ca7d95ca00cdf72a assets/frostytrixmod/models/item/chest_padouk_boat.json
+2c7ac04db4e33f6482c8a363d68a9443f084b4bc assets/frostytrixmod/models/item/coin.json
 055d61a9da25cd640e25ae4411aaab9c2104c8db assets/frostytrixmod/models/item/four_leaves_clover.json
 564c43ddfb8c1a7474bd0e12add6fef6a0e748dc assets/frostytrixmod/models/item/guinness_seeds.json
+b45a661f03c09749c6d728df7b013f23ea5be9c4 assets/frostytrixmod/models/item/padouk_boat.json
 4c10bfe5426bfbc32b8946603cd832014ee76b2d assets/frostytrixmod/models/item/padouk_button.json
 aa408fdee240d439a1a924fcf6452897ead00559 assets/frostytrixmod/models/item/padouk_door.json
 63daee185ee74ad2b94df6cd6ad615d033996a7c assets/frostytrixmod/models/item/padouk_fence.json
@@ -61,6 +64,7 @@ aa408fdee240d439a1a924fcf6452897ead00559 assets/frostytrixmod/models/item/padouk
 ebc26e1697874c41e5931d7e6c766b5c1970f2c0 assets/frostytrixmod/models/item/padouk_hanging_sign.json
 ce5bfbc7375ec88f9ee1a145017bded01a19250c assets/frostytrixmod/models/item/padouk_incantation_table.json
 3fc63ba8c3cf79a18859fb7e63bfebd7448d95e6 assets/frostytrixmod/models/item/padouk_pressure_plate.json
+ed4f8b0f366c2072cafd41ae7099dc818d4b446d assets/frostytrixmod/models/item/padouk_sapling.json
 a6e4c48db4644794951238f14112ed99e70d65bf assets/frostytrixmod/models/item/padouk_sign.json
 0b79486a5f8e1e0b48466208a01bb2c45a7138c5 assets/frostytrixmod/models/item/padouk_slab.json
 b0e940031974718e17ca7661253ab15e141e0ea7 assets/frostytrixmod/models/item/padouk_stairs.json

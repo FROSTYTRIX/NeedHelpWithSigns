@@ -6,6 +6,8 @@ pluginManagement {
             url = 'https://maven.minecraftforge.net/'
         }
         maven { url = 'https://maven.parchmentmc.org' }
+        //geckolib
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     }
 }
 

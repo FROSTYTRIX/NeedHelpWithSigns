@@ -4,6 +4,7 @@ import net.frostytrix.tutorialmod.TutorialModTest;
 import net.frostytrix.tutorialmod.block.custom.*;
 import net.frostytrix.tutorialmod.item.ModItems;
 import net.frostytrix.tutorialmod.util.ModWoodTypes;
+import net.frostytrix.tutorialmod.worldgen.tree.PadoukTreeGrower;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -96,6 +97,10 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final RegistryObject<Block> PADOUK_SAPLING = registerBlock("padouk_sapling",
+            () -> new SaplingBlock(new PadoukTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
 
     // Signs
 

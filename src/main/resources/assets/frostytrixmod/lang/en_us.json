@@ -37,6 +37,8 @@
   "block.frostytrixmod.padouk_incantation_table": "Padouk Incantation Table",
   "block.frostytrixmod.padouk_sign": "Padouk Sign",
   "block.frostytrixmod.padouk_hanging_sign": "Padouk Hanging Sign",
+  "block.frostytrixmod.padouk_sapling": "Padouk Sapling",
+  "item.frostytrixmod.wand": "Padouk Wand",
 
 
 
@@ -56,5 +58,13 @@
 
   "entity.frostytrixmod.timmy": "Timmy",
   "item.frostytrixmod.timmy_spawn_egg": "Timmy Spawn Egg",
-  "entity.minecraft.villager.frostytrixmod.malicieux": "Malicieux"
+  "entity.minecraft.villager.frostytrixmod.malicieux": "Malicieux",
+
+  "entity.frostytrixmod.mod_chest_boat": "Boat with Chest",
+  "item.frostytrixmod.padouk_boat": "Padouk Boat",
+  "item.frostytrixmod.chest_padouk_boat": "Padouk Chest Boat",
+  "entity.frostytrixmod.chest_padouk_boat": "Padouk Chest Boat",
+  "entity.frostytrixmod.padouk_boat": " Chest Boat",
+
+  "item.frostytrixmod.coin": "Coin"
 }

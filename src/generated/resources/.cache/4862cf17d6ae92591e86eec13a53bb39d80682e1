@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-02T15:53:08.4612053	Block States: frostytrixmod
+// 1.20.1	2024-06-03T11:01:09.8774141	Block States: frostytrixmod
 1213aec16dc11ffd1fd5120d95e100e023564646 assets/frostytrixmod/blockstates/arthussitte_block.json
 ae78524f5a482b5ecd442517ce49fa86bbc74bdb assets/frostytrixmod/blockstates/arthussitte_ore.json
 ceb248159b674c3a14f1c01fb4f25267249a4c99 assets/frostytrixmod/blockstates/deepslate_arthussitte_ore.json
@@ -13,6 +13,7 @@ a17da07add8aa1bad1db3c213b8ac956a2f09462 assets/frostytrixmod/blockstates/padouk
 2fe51d13e4f2878852523ff50864b85e58754d59 assets/frostytrixmod/blockstates/padouk_log.json
 03156192d54d2f71718d87418200d705dcd4e5ce assets/frostytrixmod/blockstates/padouk_planks.json
 9c4dd5d631a183c2f006ea54329330fc93edd925 assets/frostytrixmod/blockstates/padouk_pressure_plate.json
+ffa7a255e4a09c7095973cd4f9b3aa3543d66e42 assets/frostytrixmod/blockstates/padouk_sapling.json
 8f00875803a3614acdfc10c690fdc8f588af7e57 assets/frostytrixmod/blockstates/padouk_sign.json
 41b8cd93dce6df5152a238f1c66e0219ab36e1d2 assets/frostytrixmod/blockstates/padouk_slab.json
 9045235ee73847b257c8e4a797cc19752e23911e assets/frostytrixmod/blockstates/padouk_stairs.json
@@ -56,6 +57,7 @@ c119cdf557237f39fd6fa14a671945563088b09a assets/frostytrixmod/models/block/padou
 5772bbf16d9625d5ac1272bfeac222c6b24865a2 assets/frostytrixmod/models/block/padouk_planks.json
 bd3b65b3cdd3088592f07ee7fcb377e58b461050 assets/frostytrixmod/models/block/padouk_pressure_plate.json
 d0e885a5ce5d4feec07568f6890aefd9e301998f assets/frostytrixmod/models/block/padouk_pressure_plate_down.json
+d231ef63a4d2900d7f3ce33aa0d4dad5db7d4c9c assets/frostytrixmod/models/block/padouk_sapling.json
 d6e2be4e3be62d25db3f9ff456b6a19b871743bd assets/frostytrixmod/models/block/padouk_sign.json
 ae4604643b75f7fce449cbc73012e5706ea5d192 assets/frostytrixmod/models/block/padouk_slab.json
 8b7400153210b2cdf11897f10d45ebcc3d200f91 assets/frostytrixmod/models/block/padouk_slab_top.json

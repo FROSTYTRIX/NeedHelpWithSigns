@@ -1,0 +1,7 @@
+// 1.20.1	2024-06-03T20:52:10.2247155	Registries
+ae204057bf8b79a178842092a66a66e174a6cd74 data/frostytrixmod/forge/biome_modifier/add_arthussitte_ore.json
+5fad1e314b74d9f83ceeddf4cfe2d9aa0f54d39d data/frostytrixmod/forge/biome_modifier/add_tree_padouk.json
+25019867ddf2151b60d9a07d618549b9e04fd4d3 data/frostytrixmod/worldgen/configured_feature/arthussitte_ore.json
+b87fc1602fbab1ef58971299ec8d061458c663df data/frostytrixmod/worldgen/configured_feature/padouk.json
+04564a1685628ccbe34f23342c1bc116599d7d96 data/frostytrixmod/worldgen/placed_feature/arthussitte_ore_placed.json
+64eb36b686f2cffa81368ab39b9cb46a95e09cbe data/frostytrixmod/worldgen/placed_feature/padouk_placed.json

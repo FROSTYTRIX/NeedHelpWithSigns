@@ -40,9 +40,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PADOUK_FENCE.get());
         this.dropSelf(ModBlocks.PADOUK_TRAPDOOR.get());
         this.dropSelf(ModBlocks.PADOUK_INCANTATION_TABLE.get());
+        this.dropSelf(ModBlocks.PADOUK_SAPLING.get());
 
         this.add(ModBlocks.PADOUK_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.ARTHUSSITTE_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // ADD SAPPLING
+                createLeavesDrops(block, ModBlocks.PADOUK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // ADD SAPPLING
 
         this.add(ModBlocks.PADOUK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.PADOUK_SLAB.get()));

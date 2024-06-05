@@ -31,8 +31,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BLESSED_GUINNESS_SEEDS.get());
                         output.accept(ModItems.CHARBON_MALICIEUX.get());
                         output.accept(ModItems.FOUR_LEAVES_CLOVER.get());
+                        output.accept(ModItems.WAND.get());
 
                         // PADOUK
+                        output.accept(ModBlocks.PADOUK_SAPLING.get());
                         output.accept(ModBlocks.PADOUK_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PADOUK_LOG.get());
                         output.accept(ModBlocks.PADOUK_WOOD.get());
@@ -50,6 +52,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.PADOUK_INCANTATION_TABLE.get());
                         output.accept(ModBlocks.PADOUK_WALL_HANGING_SIGN.get());
                         output.accept(ModBlocks.PADOUK_SIGN.get());
+                        output.accept(ModItems.PADOUK_BOAT.get());
+                        output.accept(ModItems.PADOUK_CHEST_BOAT.get());
 
                         //arthussite stuff
                         //tools
@@ -65,6 +69,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ARTHUSSITTE_BOOTS.get());
                         // Mobs
                         output.accept(ModItems.TIMMY_SPAWN_EGG.get());
+
+                        //Coin
+                        output.accept(ModItems.COIN.get());
                     } )
                     .build());
 
